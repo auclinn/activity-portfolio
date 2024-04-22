@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  
+  .vin{
+    height: 30rem;
+    width: 95rem;
+    background-image: url(/images/map-blur.png);
+    background-size:auto;
+    background-position: center;
+    overflow: hidden;
+    
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+    display: flex;
+  }
+  
+  .logo{
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    padding: auto;
+  }
+  
+  span{
+    color:#4a0909 ;
+  }
+  
+  nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+    width: auto;
+  }
+  
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+   
+  }
+  
+  
+  nav ul li a:hover{
+    color:#4a0909 ;
+    transition: .4s;
+  
+  }
+  
+  nav ul li a:hover{
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    transform: scale( 1.2);
+  }
+  
+  .btn{
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    background-color: #4a0909;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: .4s;
+    position: relative;
+  }
+  
+  .btn:hover{
+    color: whitesmoke;
+    
+    border: 2px solid #4a0909;
+    background-color: transparent;
+  }
+  
+  .content{
+    position: absolute;
+    top: 35%;
+    left: 8%;
+    transform: translateY(-50%);
+  }
+  
+  h1{
+    color: white;
+    font-size: 60px;
+    margin: 20px 0px 20px;
+    width: 90%;
+  }
+  
+  h3{
+    color: white;
+    font-size: 22px;
+    margin-bottom: 20px;
+    width: 90%;
+  }
+  
+  h4{
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+  }
+  
+  .email-bar form{
+    position: relative;
+     width: 300px;
+     max-width: 100%;
+  }
+  
+  .email-bar form input:first-child{
+     display: inline-block;
+     width: 100%;
+     padding: 10px 40px 10px 11px;
+     border: 2px solid #4a0909;
+     outline: none;
+     border-radius: 50px;
+  }
+  
+  .email-bar form input:last-child{
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 50px;
+    top: 9.5%;
+    right: 1%;
+    background-color: #4a0909;
+    color: white;
+    box-shadow: 0px 0px 1px #000, 0px 0px 2px #858585;
+  }
+  
+  
+  .abt{
+    width: 100%;
+    padding: 8px 100px 8px 79px;
+    background: linear-gradient(to bottom, #a17171, #101010);
+    height: 600%;
+    padding-top: 50px;
+    justify-content: center;
+  }
+  
+  .abt img{
+    height: 20%;
+    width: 20%;
+    padding-bottom: 50px;
+    margin-left: 7.5rem;
+  
+  }
+  
+  .abt-text{
+    width: 555%;
+    margin: 30px;
+    
+  }
+  
+  .main{
+    width: 1130px;
+    max-width: 95%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .abt-text h2{
+    color: white;
+    font-size: 470%;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .abt-text h5{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-bottom: 25px;
+  }
+  
+  p{
+    color: white;
+    line-height: 28px;
+    letter-spacing: 1px;
+    font-size: 17px;
+    margin-bottom: 45px;
+  }
+  
+  button{
+    color: white;
+    background-color: #4a0909;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px ;
+    border-radius: 30px;
+    text-transform: capitalize;
+  }
+  
+  button:hover{
+    background-color: transparent;
+    border: 2px solid #4a0909;
+    cursor: pointer;
+  }
+  
+  .service{
+    background: #101010;
+    width: 100%;
+    padding: 100% 0;
+  
+  }
+  
+  .title h2{
+    color: white;
+    font-size: 75px;
+    width: 1030px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  
+  .service{
+    background: #101010;
+    width: 100%;
+    padding: 100px 0px;
+  }
+  
+  .title h2{
+    color: white;
+    font-size: 75px;
+    width: 1030px;
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+  }
+  
+  .card{
+    height: 495px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #191919;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .card i{
+    font-size: 30px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #4a0909;
+  
+  }
+  
+  h5{
+    color: white;
+    font-size: 23px;
+    margin-bottom: 15px;
+  }
+  
+  .pra p{
+    color: #ead6a0;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+  
+  }
+  
+  .card .button{
+    background-color: #4a0909;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 9px 22px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  
+  .card .button:hover{
+    background-color: transparent;
+    border: 2px solid #4a0909;
+    cursor: pointer;
+  }
+  
+  .contact-me{
+    width: 100%;
+    height: 290px;
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact-me p{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+  
+  .contact-me .button-two{
+    background-color: #4a0909;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  
+  .contact-me .button-two:hover{
+    background-color: transparent;
+    border: 2px solid #4a0909;
+    cursor: pointer;
+  }
+  
+  footer{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background:  #101010;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer p:nth-child(1){
+    font-size: 30px;
+    color:white;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  footer p:nth-child(2){
+    color: white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+  }
+  
+  .social{
+    display: flex;
+  }
+  
+  .social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #4a0909;
+    border: 50%;
+    margin: 22px 16px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+  }
+  
+  .end{
+    position: absolute;
+    color: #4a0909;
+    bottom: 35px;
+    font-size: 14px;
+  }
+  
