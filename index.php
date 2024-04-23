@@ -27,10 +27,11 @@
         <li><a href="#service">Developers</a></li>
         
       </ul>
-      <a href="#" class="btn">Sign In</a>
+      <a href="http://localhost/actPortfolio/sign-in.php" class="btn">Sign In</a>
     </nav>
 
     <div class="content">
+    
       <h4>BSU TNEU Lipa</h4>
       <h1>The <span>CAMPUS CHRONICLES</span></h1>
       <h3> A gamified information and assessment system that aims to improve 
@@ -50,7 +51,9 @@
 
  <section id="abt">
   <div class="main">
-    <img src="images/male-org-front.png" alt="">
+    <div id="img-div">
+      <img src="./images/male-org-front.png" alt="">
+    </div>
     <div class="abt-text">
       <h5>why we started</h5>
       <!-- <h5>Dutch <span>Painter</span></h5> -->
@@ -66,7 +69,6 @@
          specific needs. It would be greatly helpful to know who to ask questions to,
           what organizations are present on the campus, where to ask for particular 
           documents, and so forth.</p>
-      <button type="button">Let's talk</button>
     </div>
   </div>
  </section>
@@ -85,7 +87,7 @@
         </p>
 
         <p style="text-align: center;">
-          <a class="button" href="#">Read More</a>
+
         </p>
       </div>
     </div>
@@ -98,7 +100,7 @@
         </p>
 
         <p style="text-align: center;">
-          <a class="button" href="#">Read More</a>
+
         </p>
       </div>
     </div>
@@ -111,7 +113,7 @@
         </p>
 
         <p style="text-align: center;">
-          <a class="button" href="#">Read More</a>
+
         </p>
       </div>
     </div>
