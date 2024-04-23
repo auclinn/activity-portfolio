@@ -1,5 +1,3 @@
-<?php
-?>
 <!doctype html>
 <html>
   
@@ -38,8 +36,7 @@
       <h1> Sign in  </h1>
         <hr>
       <div>
-        <form name="sign-in-form" action="http://localhost/actPortfolio/sign-in.php" method="get"></form>
-        <form>
+        <form name="sign-in-form" action="http://localhost/actPortfolio/sign-in.php" method="get">
             <label for="email">Email: </label> <br>
             <input type="text" name="email">
             <br>
@@ -47,11 +44,47 @@
             <input type="text" name="pass">
             <input type="submit">
         </form>
-            <?php
-                $email = $_GET["email"];
-                $pass = $_GET["pass"];
-                echo $email;
-                echo $pass;
+        <?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbName = "portfolio";
+
+    $email = isset($_POST["email"]) ? $_POST["email"] : '';
+    $pass = isset($_POST["pass"]) ? $_POST["pass"] : '';
+
+    // Check if required fields are empty
+    if ($name == '' || $email == '' || $pass == '') {
+        echo "Error: Please fill in all required fields.";
+        exit();
+    } else {
+      $con = mysqli_connect($servername, $username, $password, $dbName, 3307);
+      if(mysqli_connect_errno()){
+          echo "Failed to connect to MySQL: " . mysqli_connect_error();
+          exit();
+      }
+      echo "Connection successful!";
+  
+      $email = mysqli_real_escape_string($con, $email);  
+      $pass = mysqli_real_escape_string($con, $pass); 
+      $query = "SELECT * FROM users WHERE email='$email' AND pass='$pass'";
+      
+      // Execution..
+      $result = mysqli_query($con, $query);
+      
+      if($result) {
+          if(mysqli_num_rows($result) > 0) { // If a user is found
+              header("Location: index.php");
+              exit(); 
+          } else {
+              echo "No rows found matching the criteria.";
+          }
+      } else {
+          echo "Error executing query: " . mysqli_error($con);
+      }
+  
+      mysqli_close($con); 
+    }
             ?>
       </div>
 
