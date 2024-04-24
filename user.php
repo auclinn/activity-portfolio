@@ -24,7 +24,7 @@
     <nav>
       <h2 class="logo">RAZ<span>BERYIE</span></h2>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php">Home</a></li>
         <li><a href="#">Try the game</a></li>
         <li><a href="#abt">About the game</a></li>
         <li><a href="#">Contact</a></li>
@@ -43,32 +43,16 @@
         ?>
       </span></h1>
       <h3> Are you ready to dive into the sand and dunes, tunnels and chambers, and explore the university in one sitting? </h3>
-      <div class="email-bar">
-        <form>
-          <input type="email" name="email" id="mail" placeholder="Email us?">
-          <input type="submit" name="submit" value="Lets Start">
-        </form>
-      </div>
       <div>
-        button place holder? basta kung anong want nyo palabasin
+        <a id ="play" class="btn">PLAY</a>
       </div>
     </div>
 
   </div>
-
- <section id="abt">
-  <div class="main">
-    <div class="abt-text">
-
-    </div>
-  </div>
- </section>
-
-
-  
-
-
 
 
  </body>
+ <footer>
+
+ </footer>
 </html>

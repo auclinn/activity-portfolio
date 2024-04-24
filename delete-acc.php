@@ -30,48 +30,43 @@
     <nav>
       <h2 class="logo">RAZ<span>BERYIE</span></h2>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php">Home</a></li>
         <li><a href="#">Try the game</a></li>
-        <li><a href="#abt">About the game</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php#abt">About the game</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#service">Developers</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php#service">Developers</a></li>
         
       </ul>
       <a href="http://localhost/activity-portfolio/account.php" class="btn">Account</a>
     </nav>
 
     <div class="content">
-    
-      <h4>You are about to delete your account</h4>
-      <h1></span></h1>
-      <h3> Delete: </h3>
-        <div>
-            <form name="update-form" action="http://localhost/activity-portfolio/delete-acc.php" method="post">
-            <label for="email">Email:</label>
-            <input type="text" name="email" placeholder="">
-            <br>
-            <label for="pass">Password:</label>
-            <input type="text" name="pass" placeholder="">
-            <div>
-                <a class="btn" href="http://localhost/activity-portfolio/account.php">Back</a>
-                <input class="btn" type="submit" value="Update">
+        <div class="spacer">
+            <h4>Enter your credentials to confirm deletion</h4>
+            <h1></span></h1>
+            <h3> Delete: </h3>
+            <div style = "display:flex; justify-content:center; align-items:center; flex-direction:column;">
+                <form name="update-form" action="http://localhost/activity-portfolio/delete-acc.php" method="post">
+                <label for="email">Email:</label><br>
+                <input id = "entry" type="text" name="email" placeholder="">
+                <br><br>
+                <label for="pass">Password:</label><br>
+                <input id = "entry" type="text" name="pass" placeholder="">
+                <br><br>
+                <div>
+                    <a id = "back" class="btn" href="http://localhost/activity-portfolio/account.php">Back</a>
+                    <input class="btn" type="submit" value="Delete">
+                </div>
+            </form>
             </div>
-        </form>
         </div>
-
-    </div>
-
-  </div>
-
- <section id="abt">
-  <div class="main">
-    <div class="abt-text">
-
     </div>
   </div>
- </section>
 
  </body>
+ <footer>
+    
+ </footer>
 </html>
 
 

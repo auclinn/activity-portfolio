@@ -69,7 +69,7 @@ nav ul li a:hover{
   transform: scale( 1.2);
 }
 
-.btn{
+.btn, input.btn{
   color: white;
   text-decoration: none;
   border: 2px solid transparent;
@@ -81,11 +81,35 @@ nav ul li a:hover{
   position: relative;
 }
 
+input.btn{
+  height: 41px;
+  font-size: 16px;
+}
+
 .btn:hover{
   color: whitesmoke;
   
   border: 2px solid #4a0909;
   background-color: transparent;
+  cursor: pointer;
+}
+
+#play {
+  font-size: 30px;
+  font-weight:900;
+}
+
+#back {
+  background-color: #ffffff;
+  color:#4a0909;
+}
+
+#back:hover{
+  color: whitesmoke;
+  
+  border: 2px solid #ffffff;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .content{
@@ -154,7 +178,8 @@ h4{
   align-items: center;
   background: linear-gradient(to bottom, #a17171, #101010);
   height: 600%;
-  padding-top: 50px;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   justify-content: center;
 }
 
@@ -251,7 +276,7 @@ button:hover{
 #service{
   background: #101010;
   width: 100%;
-  padding: 10px 0px;
+  padding-top: 5rem;
 }
 
 .title h2{
@@ -267,10 +292,11 @@ button:hover{
   justify-content: center;
   align-items: center;
   min-height: 400px;
+  padding-bottom: 10rem;
 }
 
 .card{
-  height: 250px;
+  height: 20rem;
   width: 335px;
   padding: 20px 35px;
   background: #191919;
@@ -287,7 +313,6 @@ button:hover{
   text-align: center;
   margin: 25px 0px;
   color: #4a0909;
-
 }
 
 h5{
@@ -297,7 +322,7 @@ h5{
 }
 
 .pra p{
-  color: #ead6a0;
+  color: #ffffffbe;
   font-size: 16px;
   line-height: 27px;
   margin-bottom: 25px;
@@ -321,45 +346,18 @@ h5{
   cursor: pointer;
 }
 
-.contact-me{
-  width: 100%;
-  height: 290px;
-  background-color: #191919;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-me p{
-  color: white;
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-
-.contact-me .button-two{
-  background-color: #4a0909;
-  color: white;
-  text-decoration: none;
-  border: 2px solid transparent;
-  font-weight: bold;
-  padding: 13px 30px;
-  border-radius: 30px;
-  transition: .4s;
-}
-
-.contact-me .button-two:hover{
-  background-color: transparent;
-  border: 2px solid #4a0909;
-  cursor: pointer;
+.card img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px;
 }
 
 footer{
   position: relative;
   width: 100%;
   height: 400px;
-  background:  #101010;
+  background:  #191919;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -406,15 +404,16 @@ footer p:nth-child(2){
 
 .end{
   position: absolute;
-  color: #4a0909;
+  color: #ffffffc0;
   bottom: 35px;
   font-size: 14px;
 }
 
 .spacer {
-  background-color: grey;
-  height: 300px;
+  background-color: #10101062;
+  height: 320px;
   width: 500px;
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -434,6 +433,37 @@ footer p:nth-child(2){
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  /* transform: translateY(-50%); */
+input[type="text"]{
+  border-radius: 5px;
+  border: none;
+  padding: 2px;
+}
+
+#entry{
+  width: 100%;
+}
+.submit{
+  border-radius: 5px;
+  border: none;
+  padding: 8px; 
+  transition: .4s;
+  font-size: 15px;
+  font-weight: bold;
+}
+.submit:hover{
+  background-color: #4a0909;
+  color: #ffffff;
+  cursor: pointer;
+}
+label{
+  color: #ffffff;
+}
+.new-acc a{
+  color: #ffc0c0;
+}
+
+.spacer p {
+  line-height: 15px;
 }

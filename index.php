@@ -27,7 +27,7 @@
         <li><a href="#service">Developers</a></li>
         
       </ul>
-      <a href="http://localhost/activity-portfolio/sign-in.php" class="btn">Sign In</a>
+      <a href="http://localhost/activity-portfolio/sign-in.php#focus" class="btn">Sign In</a>
     </nav>
 
     <div class="content-index">
@@ -86,7 +86,7 @@
   
   <div class="box">
     <div class="card">
-      <i class="fas fa-bars"></i>
+      <img src = "./images/razec.png">
       <h5>John Razec Agno</h5>
       <div class="pra">
         <p> > Leader <br> > Backend Developer
@@ -99,10 +99,10 @@
     </div>
 
     <div class="card">
-      <i class="fas fa-bars"></i>
+      <img src = "./images/bernadette.png">
       <h5>Bernadette Awatin</h5>
       <div class="pra">
-        <p> > Background artist <br> >Frontend Developer
+        <p> > Background artist <br> > Frontend Developer
         </p>
 
         <p style="text-align: center;">
@@ -112,7 +112,7 @@
     </div>
 
     <div class="card">
-      <i class="fas fa-bars"></i>
+      <img src = "./images/yajie.png">
       <h5>Carlos Yajie Fetizanan</h5>
       <div class="pra">
         <p> > Nonchalant <br> > Character artist <br> > UI/UX Developer
@@ -127,22 +127,10 @@
   </div>
 </div>
 
-
-<div class="contact-me">
-  <p> A Beautiful Masterpiece.</p>
-  <a class="button-two" href="#">Info</a>
-</div>
-
 <footer>
-  <p>Vincent Van Gogh</p>
-  <p> For more Portrait, Painting and Art tutorial - please 
-    click on the link below to subscribe to my channel:</p>
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-    <p class="end">CopyRight By Carlos Yajie</p>
+  <p>© Razberyie</p>
+  <p>The Campus Chronicles</p>
+  <p class="end">2024</p>
 </footer>
 
   

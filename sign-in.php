@@ -21,33 +21,35 @@
       <nav>
         <h2 class="logo">RAZ<span>BERYIE</span></h2>
         <ul>
-          <li><a href="#">Home</a></li>
+          <li><a href="http://localhost/activity-portfolio/index.php">Home</a></li>
           <li><a href="#">Try the game</a></li>
-          <li><a href="#abt">About the game</a></li>
+          <li><a href="http://localhost/activity-portfolio/index.php#abt">About the game</a></li>
           <li><a href="#">Contact</a></li>
-          <li><a href="#service">Developers</a></li>
+          <li><a href="http://localhost/activity-portfolio/index.php#service">Developers</a></li>
           
         </ul>
-        <a href="http://localhost/activity-portfolio/sign-in.php" class="btn">Sign In</a>
+        <a href="#focus" class="btn">Sign In</a>
       </nav>
     </div>
 
-    <div class="content">
+    <div id = "focus" class="content">
       <div class = "spacer">
         <div class="header-modal">
-        <h4>BSU TNEU Lipa</h4>
-        <h1> Sign in  </h1>
+        <h1> Sign In  </h1>
 
         </div>
           
-        <div>
+        <div style = "display:flex; justify-content:center; align-items:center; flex-direction:column;">
           <form name="sign-in-form" action="http://localhost/activity-portfolio/sign-in.php" method="get">
               <label for="email">Email: </label> <br>
               <input type="text" name="email">
+              <br><br>
+              <label for="pass">Password: </label> <br>
+              <input type="text" name="pass"> <br>
               <br>
-              <label for="pass">pass: </label> <br>
-              <input type="text" name="pass">
-              <input type="submit">
+              <div style = "display:flex; justify-content:center; align-items:center; flex-direction:column;">
+                <input class="submit" type="submit">
+              </div>
           </form>
         </div>
           <div>
@@ -62,7 +64,7 @@
 
     // Check if required fields are empty
     if ($email == '' || $pass == '') {
-        echo "<p style='color: red;'>Please fill in all required fields.</p>";
+        echo "<br><p style='color: #ffffff90;'>Please fill in all required fields.</p>";
     } else {
       $con = mysqli_connect($servername, $username, $password, $dbName, 3307);
       if(mysqli_connect_errno()){
@@ -92,6 +94,9 @@
       mysqli_close($con); 
     }
 ?>
+          </div>
+          <div class = "new-acc">
+          <a href="http://localhost/activity-portfolio/sign-up.php#focus">No account yet? Create one here</a>
           </div>
         </div>
 

@@ -25,47 +25,47 @@
     <nav>
       <h2 class="logo">RAZ<span>BERYIE</span></h2>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php">Home</a></li>
         <li><a href="#">Try the game</a></li>
-        <li><a href="#abt">About the game</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php#abt">About the game</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#service">Developers</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php#service">Developers</a></li>
         
       </ul>
-      <a href="http://localhost/activity-portfolio/update.php" class="btn">Account</a>
+      <a href="http://localhost/activity-portfolio/user.php" class="btn">Account</a>
     </nav>
 
     <div class="content">
-    
+    <div class = "spacer">
       <h4>What do you want to do?</h4>
       <h1></span></h1>
-      <h3> Deets! </h3>
+      <h3>Your Deets! </h3>
       <div>
-        <h3>Email: 
+        <p style = "font-size: 20px; margin-bottom: 5px;"><span>Email:</span> 
             <?php
                 echo $user["email"];
             ?>
-        </h3>
-        <h3>
-            Username:
+        </p>
+        <p style = "font-size: 20px; margin-bottom: 5px;">
+            <span>Username:</span>
             <?php
                 echo $user["user_name"];
             ?>
-        </h3>
-        <h3>
-            Password:
+        </p>
+        <p style = "font-size: 20px;">
+            <span>Password:</span>
             <?php
                 echo $user["pass"];
             ?>
-        </h3>
-
+        </p>
+        <br><br>
       </div>
       <div>
-       <a class="btn" href="http://localhost/activity-portfolio/delete-acc.php">Delete Account?</a>
-       <a class="btn" href="http://localhost/activity-portfolio/update.php">Update Account</a>
+       <a style = "margin-right: 3px;" class="btn" href="http://localhost/activity-portfolio/delete-acc.php">Delete Account</a>
+       <a style = "margin-left: 3px;" class="btn" href="http://localhost/activity-portfolio/update.php">Update Account</a>
       </div>
     </div>
-
+    </div>
   </div>
 
  <section id="abt">

@@ -20,56 +20,37 @@
     <nav>
       <h2 class="logo">RAZ<span>BERYIE</span></h2>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php">Home</a></li>
         <li><a href="#">Try the game</a></li>
-        <li><a href="#abt">About the game</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php#abt">About the game</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#service">Developers</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php#service">Developers</a></li>
         
       </ul>
-      <a href="http://localhost/act-portfolio/sign-in.php" class="btn">Sign In</a>
+      <a href="http://localhost/activity-portfolio/sign-in.php#focus" class="btn">Sign In</a>
     </nav>
 
-    <div class="content">
-    
-      <div>
-      <h1> Sign Up </h1>
-       
-      </div>
-      <div>
-        <form name="sign-up-form" action="http://localhost/activity-portfolio/sign-up.php" method="post">
-            <label for="user_name">Username: </label> <br>
-            <input type="text" name="user_name">
-            <br>
-            <label for="email">Email: </label> <br>
-            <input type="text" name="email">
-            <br>
-            <label for="pass">pass: </label> <br>
-            <input type="text" name="pass">
-            <input type="submit">
-        </form>
-       
-      </div>
-
-    </div>
-
-  </div>
-
-
-<footer>
-  <p>Vincent Van Gogh</p>
-  <p> For more Portrait, Painting and Art tutorial - please 
-    click on the link below to subscribe to my channel:</p>
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-    <p class="end">CopyRight By Carlos Yajie</p>
-</footer>
-
-
-<?php
+    <div id = "focus" class="content">
+      <div class = "spacer">
+        <div>
+          <h1> Sign Up </h1>
+        </div>
+        <div style = "display:flex; justify-content:center; align-items:center; flex-direction:column;">
+          <form name="sign-up-form" action="http://localhost/activity-portfolio/sign-up.php" method="post">
+              <label for="user_name">Username: </label> <br>
+              <input type="text" name="user_name">
+              <br><br>
+              <label for="email">Email: </label> <br>
+              <input type="text" name="email">
+              <br><br>
+              <label for="pass">Password: </label> <br>
+              <input type="text" name="pass"> <br><br>
+              <div style = "display:flex; justify-content:center; align-items:center; flex-direction:column;">
+                <input class = "submit" type="submit" value="Create Account">
+              </div>
+              
+          </form>
+          <?php
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -82,8 +63,8 @@
 
     // Check if required fields are empty
     if ($name == '' || $email == '' || $pass == '') {
-        echo "Error: Please fill in all required fields.";
-        exit();
+        echo "<br><p style='color: #ffffff90;'>Please fill in all required fields.</p>";
+        
     } else {
         $con = mysqli_connect($servername, $username, $password, $dbName, 3307);
         if(mysqli_connect_errno()){
@@ -112,6 +93,17 @@
     }  
 
 ?>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<footer>
+</footer>
+
+
+
 
  </body>
 </html>

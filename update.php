@@ -30,57 +30,40 @@
     <nav>
       <h2 class="logo">RAZ<span>BERYIE</span></h2>
       <ul>
-        <li><a href="#">Home</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php">Home</a></li>
         <li><a href="#">Try the game</a></li>
-        <li><a href="#abt">About the game</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php#abt">About the game</a></li>
         <li><a href="#">Contact</a></li>
-        <li><a href="#service">Developers</a></li>
+        <li><a href="http://localhost/activity-portfolio/index.php#service">Developers</a></li>
         
       </ul>
       <a href="http://localhost/activity-portfolio/update.php" class="btn">Account</a>
     </nav>
 
     <div class="content">
-    
-      <h4>You are about to update your account</h4>
-      <h1></span></h1>
-      <h3> Update: </h3>
-      <div>
-        <h3>Email: 
-            <?php
-                echo $user["email"];
-            ?>
-        </h3>
-        <h3>
-            Username:
-            <?php
-                echo $user["user_name"];
-            ?>
-        </h3>
-        <h3>
-            Password:
-            <?php
-                echo $user["pass"];
-            ?>
-        </h3>
+      <div class="spacer">
+        <h4>You are about to update your account</h4>
+        <h3> Update: </h3>
+        <div>
+          <br>
 
-
-        <form name="update-form" action="http://localhost/activity-portfolio/update.php" method="post">
-            <label for="new-email">New Email:</label>
-            <input type="email" name="new-email" placeholder="">
-            <br>
-            <label for="new-pass">New Password:</label>
-            <input type="text" name="new-pass" placeholder="">
-            <br>
-            <label for="user-name">New Username:</label>
-            <input type="text" name="user-name" placeholder="">
-            <div>
-                <a class="btn" href="http://localhost/activity-portfolio/account.php">Back</a>
-                <input class="btn" type="submit" value="Update">
-            </div>
-        </form>
+          <form name="update-form" action="http://localhost/activity-portfolio/update.php" method="post">
+              <label for="new-email">New Email:</label><br>
+              <input id = "entry" type="text" name="new-email" placeholder="">
+              <br><br>
+              <label for="new-pass">New Password:</label><br>
+              <input id = "entry" type="text" name="new-pass" placeholder="">
+              <br><br>
+              <label for="user-name">New Username:</label><br>
+              <input id = "entry" type="text" name="user-name" placeholder="">
+              <br><br>
+              <div>
+                  <a id = "back" class="btn" href="http://localhost/activity-portfolio/account.php">Back</a>
+                  <input class="btn" type="submit" value="Update">
+              </div>
+          </form>
+        </div>
       </div>
-
     </div>
 
   </div>
