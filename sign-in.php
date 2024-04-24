@@ -31,7 +31,7 @@
     </nav>
 
     <div class="content">
-    
+    <div class = "spacer">
       <h4>BSU TNEU Lipa</h4>
       <h1> Sign in  </h1>
         <hr>
@@ -89,7 +89,7 @@
       </div>
 
     </div>
-
+    </div>
   </div>
 
 
