@@ -27,7 +27,7 @@
         <li><a href="#service">Developers</a></li>
         
       </ul>
-      <a href="http://localhost/actPortfolio/sign-in.php" class="btn">Sign In</a>
+      <a href="http://localhost/activity-portfolio/sign-in.php" class="btn">Sign In</a>
     </nav>
 
     <div class="content">
@@ -36,7 +36,7 @@
       <h1> Sign in  </h1>
         <hr>
       <div>
-        <form name="sign-in-form" action="http://localhost/actPortfolio/sign-in.php" method="get">
+        <form name="sign-in-form" action="http://localhost/activity-portfolio/sign-in.php" method="get">
             <label for="email">Email: </label> <br>
             <input type="text" name="email">
             <br>
@@ -44,26 +44,25 @@
             <input type="text" name="pass">
             <input type="submit">
         </form>
-        <?php
+        
+<?php
     $servername = "localhost";
     $username = "root";
     $password = "";
     $dbName = "portfolio";
 
-    $email = isset($_POST["email"]) ? $_POST["email"] : '';
-    $pass = isset($_POST["pass"]) ? $_POST["pass"] : '';
+    $email = isset($_GET["email"]) ? $_GET["email"] : '';
+    $pass = isset($_GET["pass"]) ? $_GET["pass"] : '';
 
     // Check if required fields are empty
-    if ($name == '' || $email == '' || $pass == '') {
-        echo "Error: Please fill in all required fields.";
-        exit();
+    if ($email == '' || $pass == '') {
+        echo "<p style='color: red;'>Please fill in all required fields.</p>";
     } else {
       $con = mysqli_connect($servername, $username, $password, $dbName, 3307);
       if(mysqli_connect_errno()){
           echo "Failed to connect to MySQL: " . mysqli_connect_error();
           exit();
       }
-      echo "Connection successful!";
   
       $email = mysqli_real_escape_string($con, $email);  
       $pass = mysqli_real_escape_string($con, $pass); 
@@ -71,13 +70,14 @@
       
       // Execution..
       $result = mysqli_query($con, $query);
-      
+
       if($result) {
           if(mysqli_num_rows($result) > 0) { // If a user is found
-              header("Location: index.php");
-              exit(); 
+              session_start();
+              $_SESSION["user"] = mysqli_fetch_assoc($result);
+              header("Location: user.php"); 
           } else {
-              echo "No rows found matching the criteria.";
+              echo "<p style='color:red;'>Invalid Credentials! </p>";
           }
       } else {
           echo "Error executing query: " . mysqli_error($con);
@@ -85,7 +85,7 @@
   
       mysqli_close($con); 
     }
-            ?>
+?>
       </div>
 
     </div>
@@ -94,15 +94,7 @@
 
 
 <footer>
-  <p>Vincent Van Gogh</p>
-  <p> For more Portrait, Painting and Art tutorial - please 
-    click on the link below to subscribe to my channel:</p>
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-    <p class="end">CopyRight By Carlos Yajie</p>
+
 </footer>
 
   

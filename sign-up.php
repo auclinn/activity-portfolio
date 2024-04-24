@@ -27,7 +27,7 @@
         <li><a href="#service">Developers</a></li>
         
       </ul>
-      <a href="http://localhost/actPortfolio/sign-in.php" class="btn">Sign In</a>
+      <a href="http://localhost/act-portfolio/sign-in.php" class="btn">Sign In</a>
     </nav>
 
     <div class="content">
@@ -36,7 +36,7 @@
       <h1> Sign Up </h1>
         <hr>
       <div>
-        <form name="sign-up-form" action="http://localhost/actPortfolio/sign-up.php" method="post">
+        <form name="sign-up-form" action="http://localhost/activity-portfolio/sign-up.php" method="post">
             <label for="user_name">Username: </label> <br>
             <input type="text" name="user_name">
             <br>
@@ -87,6 +87,7 @@
         $con = mysqli_connect($servername, $username, $password, $dbName, 3307);
         if(mysqli_connect_errno()){
             echo "Failed to connect to MySQL: " . mysqli_connect_error();
+
             exit();
         }
 
@@ -108,6 +109,7 @@
 
         mysqli_close($con);
     }  
+
 ?>
 
  </body>

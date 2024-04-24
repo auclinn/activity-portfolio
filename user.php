@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    $user = $_SESSION["user"];
+?>
 <!doctype html>
 <html>
   
@@ -27,24 +31,27 @@
         <li><a href="#service">Developers</a></li>
         
       </ul>
-      <a href="http://localhost/actPortfolio/sign-in.php" class="btn">Sign In</a>
+      <a href="http://localhost/activity-portfolio/account.php" class="btn">Account</a>
     </nav>
 
     <div class="content">
     
-      <h4>BSU TNEU Lipa</h4>
-      <h1>The <span>CAMPUS CHRONICLES</span></h1>
-      <h3> A gamified information and assessment system that aims to improve 
-        the students’ familiarity with university-related knowledge as well as 
-        to help them navigate through the campus facilities </h3>
+      <h4>Welcome</h4>
+      <h1>Hi, <span>
+        <?php
+          echo $user["user_name"];
+        ?>
+      </span></h1>
+      <h3> Are you ready to dive into the sand and dunes, tunnels and chambers, and explore the university in one sitting? </h3>
       <div class="email-bar">
         <form>
-          <input type="email" name="email" id="mail" placeholder="Enter Your Email">
+          <input type="email" name="email" id="mail" placeholder="Email us?">
           <input type="submit" name="submit" value="Lets Start">
         </form>
-
       </div>
-
+      <div>
+        button place holder? basta kung anong want nyo palabasin
+      </div>
     </div>
 
   </div>
@@ -52,78 +59,11 @@
  <section id="abt">
   <div class="main">
     <div class="abt-text">
-      <h5>why we started</h5>
-      <!-- <h5>Dutch <span>Painter</span></h5> -->
-      <p>lorem ipsum</p>
+
     </div>
   </div>
  </section>
 
- <div id="service">
-  <div class="title">
-    <h2>Developers</h2>
-  </div>
-  
-  <div class="box">
-    <div class="card">
-      <i class="fas fa-bars"></i>
-      <h5>John Razec Agno</h5>
-      <div class="pra">
-        <p> > Leader <br> > Backend Developer
-        </p>
-
-        <p style="text-align: center;">
-
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <i class="fas fa-bars"></i>
-      <h5>Bernadette Awatin</h5>
-      <div class="pra">
-        <p> > Background artist <br> >Frontend Developer
-        </p>
-
-        <p style="text-align: center;">
-
-        </p>
-      </div>
-    </div>
-
-    <div class="card">
-      <i class="fas fa-bars"></i>
-      <h5>Carlos Yajie Fetizanan</h5>
-      <div class="pra">
-        <p> > Nonchalant <br> > Character artist <br> > UI/UX Developer
-        </p>
-
-        <p style="text-align: center;">
-
-        </p>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-
-<div class="contact-me">
-  <p> A Beautiful Masterpiece.</p>
-  <a class="button-two" href="#">Info</a>
-</div>
-
-<footer>
-  <p>Vincent Van Gogh</p>
-  <p> For more Portrait, Painting and Art tutorial - please 
-    click on the link below to subscribe to my channel:</p>
-    <div class="social">
-      <a href="#"><i class="fab fa-facebook-f"></i></a>
-      <a href="#"><i class="fab fa-instagram"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok"></i></a>
-    </div>
-    <p class="end">CopyRight By Carlos Yajie</p>
-</footer>
 
   
 

@@ -27,7 +27,7 @@
         <li><a href="#service">Developers</a></li>
         
       </ul>
-      <a href="http://localhost/actPortfolio/sign-in.php" class="btn">Sign In</a>
+      <a href="http://localhost/activity-portfolio/sign-in.php" class="btn">Sign In</a>
     </nav>
 
     <div class="content">
