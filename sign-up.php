@@ -32,9 +32,10 @@
 
     <div class="content">
     
-      <h4>BSU TNEU Lipa</h4>
+      <div>
       <h1> Sign Up </h1>
-        <hr>
+       
+      </div>
       <div>
         <form name="sign-up-form" action="http://localhost/activity-portfolio/sign-up.php" method="post">
             <label for="user_name">Username: </label> <br>

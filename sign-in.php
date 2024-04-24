@@ -17,34 +17,40 @@
  <body>
 
   <div class="vin">
-    <nav>
-      <h2 class="logo">RAZ<span>BERYIE</span></h2>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Try the game</a></li>
-        <li><a href="#abt">About the game</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#service">Developers</a></li>
-        
-      </ul>
-      <a href="http://localhost/activity-portfolio/sign-in.php" class="btn">Sign In</a>
-    </nav>
+    <div>
+      <nav>
+        <h2 class="logo">RAZ<span>BERYIE</span></h2>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Try the game</a></li>
+          <li><a href="#abt">About the game</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#service">Developers</a></li>
+          
+        </ul>
+        <a href="http://localhost/activity-portfolio/sign-in.php" class="btn">Sign In</a>
+      </nav>
+    </div>
 
     <div class="content">
-    <div class = "spacer">
-      <h4>BSU TNEU Lipa</h4>
-      <h1> Sign in  </h1>
-        <hr>
-      <div>
-        <form name="sign-in-form" action="http://localhost/activity-portfolio/sign-in.php" method="get">
-            <label for="email">Email: </label> <br>
-            <input type="text" name="email">
-            <br>
-            <label for="pass">pass: </label> <br>
-            <input type="text" name="pass">
-            <input type="submit">
-        </form>
-        
+      <div class = "spacer">
+        <div class="header-modal">
+        <h4>BSU TNEU Lipa</h4>
+        <h1> Sign in  </h1>
+
+        </div>
+          
+        <div>
+          <form name="sign-in-form" action="http://localhost/activity-portfolio/sign-in.php" method="get">
+              <label for="email">Email: </label> <br>
+              <input type="text" name="email">
+              <br>
+              <label for="pass">pass: </label> <br>
+              <input type="text" name="pass">
+              <input type="submit">
+          </form>
+        </div>
+          <div>
 <?php
     $servername = "localhost";
     $username = "root";
@@ -86,9 +92,10 @@
       mysqli_close($con); 
     }
 ?>
-      </div>
+          </div>
+        </div>
 
-    </div>
+      
     </div>
   </div>
 

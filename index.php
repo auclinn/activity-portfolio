@@ -30,9 +30,13 @@
       <a href="http://localhost/activity-portfolio/sign-in.php" class="btn">Sign In</a>
     </nav>
 
-    <div class="content">
+    <div class="content-index">
     
+
+      <div>
       <h4>BSU TNEU Lipa</h4>
+
+
       <h1>The <span>CAMPUS CHRONICLES</span></h1>
       <h3> A gamified information and assessment system that aims to improve 
         the students’ familiarity with university-related knowledge as well as 
@@ -43,6 +47,8 @@
           <input type="submit" name="submit" value="Lets Start">
         </form>
 
+
+        </div>
       </div>
 
     </div>
